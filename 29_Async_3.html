@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+    <script>
+        //Example 1
+        let p = new Promise((resolve,reject)=>{
+            let a = 1+1
+            if(a==2){
+                resolve("success")
+            }else{
+                reject('Failed')
+            }
+        })
+        p.then((message)=>{
+            console.log("this is "+ message);
+        }).catch((message)=>{
+            console.log("This is catch"+ message);
+        })
+        //then will occur when resolve part will solved
+        //catch will occur when reject part will solved
+
+
+        //Example 2
+        const userLeft = false;
+        const userWatchingCatMeme = true
+        function watchTutorialPromise(){
+            return new Promise((resolve,reject)=>{
+                if(userLeft){
+                    reject({
+                        name:'user Left',
+                        message:"////"
+                    })
+                }else if(userWatchingCatMeme){
+                    reject({
+                        name:"User watching Cat Meme",
+                        message:"Hello World"
+                    })
+                }else{
+                    resolve("thumbs UP")
+                }
+            })
+        }
+        watchTutorialPromise().then((message)=>{
+            console.log("Success"+message);
+        }).catch((error)=>{
+            console.log(error.name+" "+error.message);
+        })
+
+
+    </script>
+</body>
+</html>
