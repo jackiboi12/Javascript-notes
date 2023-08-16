@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <button id="orange">Orange</button>
+    <button id="green">Green</button>
+  </body>
+
+  <script>
+    //Closure -> gives you access to an outer function's scope from an inner function.
+    //lexical scope refers to the ability of a function scope to access variables from the parent scope
+    function first() {
+      let name = "Aditya";
+      console.log("Outer", secret); //inner function mai jo declare hua yaha access nahi hoskta
+      function second() {
+        let secret = "123";
+        console.log("second", name);
+      }
+      function second1() {
+        console.log("second1", name);
+        console.log("second1", secret); //children children relation not possible
+      }
+      second();
+      second1();
+    }
+    first();
+  </script>
+  <script>
+    // document.getElementById("Orange").onclick = function () {
+    //   document.body.style.backgroundColor = "orange";
+    // };
+    // document.getElementById("Green").onclick = function () {
+    //   document.body.style.backgroundColor = "green";
+    // };
+    // ----------Correct method ------------
+    function clickHandler(color){
+        return function(){
+          document.body.style.backgroundColor = `${color}`
+        }
+    }
+    document.getElementById('orange').onclick = clickHandler("orange")
+    document.getElementById('green').onclick = clickHandler("green")
+  </script>
+</html>
