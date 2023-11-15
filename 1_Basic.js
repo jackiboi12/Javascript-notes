@@ -9,3 +9,4 @@ console.log(typeof name);
 console.log(typeof null);   //output-> object
 console.log(typeof undefined);   //output-> undefined
 console.table([age,name,ok]);  //table representation of data with index 
+

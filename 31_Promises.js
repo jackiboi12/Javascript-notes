@@ -110,7 +110,7 @@ consumePromiseFive();
 //     }
 // }
 // getAllUsers();
-// ----------or--------
+// -------------------or--------------------
 fetch('https://jsonplaceholder.typicode.com/users')
 .then((response)=>{
     return response.json()
