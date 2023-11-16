@@ -27,6 +27,7 @@ console.log();
 console.log("Topic-2");
 console.log("1" + 2+2);     //Output-> 122 
 // Because jo starting m primitive value hogi saare value uske hissab se change ho jaayengi 
+//" " iske baad saaari values ko seperately he dekha jaayega
 console.log(1 + 2 + "2"+2+2);     //Output-> 3222
 let bye;
 console.log(bye);       //output->undefined     
@@ -37,14 +38,14 @@ console.log();
 console.log("Topic-3");
 //comparison(>,<,<=,>=) convert null to number , treating it as 0
 console.log(null>0);
-console.log(null>=0);
+console.log(null>=0);   //Only true case
 console.log(null==0);
 
 console.log();
 
 //Topic - 4
 console.log("Topic-4");
-//undefined wala comparison hamesha zero dega 
+//undefined wala comparison hamesha zero Hoga 
 console.log(undefined>0);
 console.log(undefined==0);
 console.log(undefined<=0);
