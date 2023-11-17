@@ -24,9 +24,8 @@ myArr1.unshift(11);
 //add element in the zero index
 //prefer not to do this-> sabhi element ke index+1 hojaate hai  
 console.log(myArr1);
-myArr1.shift(); // removes the first element from an array and returns it
+console.log(myArr1.shift());    // removes the first element from an array and returns it
 console.log(myArr1);
-
 
 console.log();
 console.log("Topic-3");
