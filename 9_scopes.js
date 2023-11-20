@@ -4,7 +4,7 @@
 //     var a = 10;
 // }
 // console.log(a); 
-//scope se bahar nahi jaani cahhiye value 
+//scope se bahar nahi jaani chahiye value 
 //isliye dont use var 
 
 
