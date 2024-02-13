@@ -3,7 +3,7 @@
 //Topic-1
 console.log("Topic-1");
  let score  = true;
- console.log(typeof score); 
+ console.log(typeof score);
  let valInNum = Number(score);
  console.log(typeof valInNum);
  console.log(valInNum)
@@ -40,13 +40,15 @@ console.log("Topic-3");
 console.log(null>0);
 console.log(null>=0);   //Only true case
 console.log(null==0);
+//Comparison(<,>,<=,>=) convert null to a number , treating it as 0 
+//Therefore null>=0 is true but null>0 is false
 
 console.log();
 
 //Topic - 4
 console.log("Topic-4");
-//undefined wala comparison hamesha zero Hoga 
-console.log(undefined>0);
+//undefined wala comparison hamesha zero/False Hoga 
+console.log(undefined>=0);
 console.log(undefined==0);
 console.log(undefined<=0);
 

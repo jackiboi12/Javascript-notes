@@ -1,4 +1,5 @@
 //if
+console.log(`\n Topic-1`);
 const loggedInFromGoogle = true;
 const loggedInFromEmail = false;
 if(loggedInFromEmail||loggedInFromGoogle){
@@ -9,6 +10,7 @@ if(loggedInFromEmail||loggedInFromGoogle){
 
 
 //switch
+console.log(`\n Topic-2`);
 const month = "Jan";
 switch (month) {
     case "Jan":
@@ -28,6 +30,7 @@ switch (month) {
 
 
 //Truthy and falsy
+console.log(`\n Topic-3`);
 const userEmail = "Aditya@gmail.com"
 if(userEmail){
     console.log("Got user email");
@@ -44,12 +47,14 @@ if(Object.keys(emptyObj).length===0){
 
 //Note 
 //remember their output 
+console.log(`\n Topic-4`);
 console.log(false==0);
 console.log(false=="");
 console.log(0=="");
 
 
 //Nullish Coalescing ( ?? ) Operator:null undefined
+console.log(`\n Topic-5`);
 let val1;
 val1 = 5??10
 console.log(val1);
@@ -60,5 +65,6 @@ console.log(val1);
 
 
 //Ternary operator
+console.log(`\n Topic-6`);
 const iceTeaPrice = 100;
 iceTeaPrice <=80 ?console.log("less than 80"):console.log("More than 80");;

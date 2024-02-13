@@ -1,4 +1,5 @@
 //Example 1
+console.log(`\n Example-1`);
 let i = 2;
 while (i<=10) {
     console.log(`Value of index is ${i}`);
@@ -7,6 +8,7 @@ while (i<=10) {
 
 
 //Example 2
+console.log(`\n Example-2`);
 let MYarray = ["Flash", "Batman","Goku"];
 let arr = 0;
 while (arr<MYarray.length) {
@@ -17,6 +19,7 @@ while (arr<MYarray.length) {
 
 
 //Example 3
+console.log(`\n Example-3`);
 let score =11
 do {
     console.log(`Score is ${score}`);

@@ -8,7 +8,7 @@
     console.log(`Db connected ,thanks ${name}`);
 })("Aditya");
 
-// ---------Note------------ 
+// ---------------Note--------------- 
 // Control Flow 
 //Global Execution Context(allocated all to 'this')
 
@@ -16,7 +16,7 @@
 //(variables->undefined and function->defination ,set kardenge )
 //Excution Phase->(2nd Cycle)
 //variable ko unki value assign kr denge and 
-// for funtion ek new box banega uske andhr new variable environment + execution thread and same repeat hoga (memory and execute phase )
+//for funtion ek new box banega uske andhr new variable environment + execution thread and same repeat hoga (memory and execute phase )
 
 //Function Execution Context
 //Eval Execution Context
