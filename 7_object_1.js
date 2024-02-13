@@ -1,7 +1,7 @@
 //constructor se banega agr obj then -> singleton
+//literal se banega agr obj then -> not a singleton
 //Singleton pattern ensures that only one instance of the object is created.
 // Object.create->It's not a constructor function and doesn't create instances of classes; it directly creates objects with a specified prototype
-//literal se banega agr obj then -> not a singleton
 
 //Topic-1
 //object literals
@@ -35,4 +35,37 @@ jsUser.greeting2 = function(){
 }
 console.log(jsUser.greeting1());
 console.log(jsUser.greeting2());
+
+//Topic-2
+//some ways to define an Object
+console.log(`\n Topic-2`);
+const t_user = {}
+t_user.id = "123abc"
+t_user.name = "Aditya"
+t_user.status = true
+console.log(t_user);
+
+const regularUser = {
+    email:"some@gmail.com",
+    fullname:{
+        userfullname: {
+            firstname:"Hitesh",
+            lastname:"sir"
+        }
+    }
+}
+console.log(regularUser.fullname.userfullname.firstname);
+const finalUsers = [
+    {
+        id:1,
+        fullname:"Adi sharma"
+    },
+    {
+        id:2,
+        fullname:"raj sharma"
+    }
+    
+]
+console.log(finalUsers[1].id);
+console.log(finalUsers[0].fullname);
 

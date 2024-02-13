@@ -1,7 +1,7 @@
 // -----------------Arrays---------------
 //Arrays are resizable & can contain mix of datatypes
-//Shallow Copy->same reference Point (Value gets changed)
-//Deep copy-> donot share same reference point 
+//Shallow Copy->same reference Point (Value gets changed), similar to heap
+//Deep copy-> donot share same reference point,similar to stack
 //JS Array-copy-operation create Shallow Copies
 
 //Two ways to init an Array 

@@ -7,10 +7,10 @@ const hero2 = new Array("spiderman", "Beetle")
 // //By push method -> Wrong way 
 // hero1.push(hero2);
 // //hero2 ke saare element ko ek he array ka element treat kardeya 
-// console.log(hero1);
 
 
 // //By concat method -> Better but use spread operator for 2 or more arrays
+//  //concat return new array
 // const all_hero = hero1.concat(hero2);
 // console.log(all_hero);
 
@@ -33,14 +33,14 @@ console.log(real_ano_arr);
 //Topic-3
 console.log();
 console.log("Topic-3");
-console.log(Array.isArray([1,2,3]));
+console.log(Array.isArray([1,2,3]));    //isArray return T/f 
 console.log(Array.isArray("HELLO WORLD"));
 console.log(Array.from("ADITYA"));  //convert array from iterable object
 //It converts the string "ADITYA" into an array where each character becomes an element in the array.
 console.log(Array.from({name:"Aditya"}));  //return empty array because an object is not iterable 
 let score1 = 100;
 let score2 = 1000;
-let score3 = 10000;
+let score3 = "aditya";
 console.log(Array.of(score1,score2,score3));    //Return array from set of elements
 
 

@@ -13,6 +13,9 @@ const obj3 = {
     5:"e",
     6:"f"
 }
+//Object.assign() 
+//const obj4 = Object.assign({},obj1,obj2,obj3)
+
 const obj4 = {...obj1,...obj2,...obj3};
 console.log(obj4);
 
@@ -32,8 +35,10 @@ const course = {
     courseInstructor:"Aditya"
 }
 const {courseInstructor:inst} = course  //inst->shortNotation
+const {coursename:c_name} = course
 //console.log(courseInstructor);   //cannot perform this operation because we have assigned other name its like props
 console.log(inst);
+console.log(c_name);
 
 
 
