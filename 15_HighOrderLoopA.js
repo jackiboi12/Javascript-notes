@@ -2,6 +2,8 @@
 //array ke andar object-> [{},{},{}]
 
 //For-of Loop
+//Topic-1
+//console.log(`\n Topic-1`);
 //Example 1
 // const arr = [1,2,3,4,5];
 // for (const num of arr) {
@@ -16,10 +18,11 @@
     
 // }
 
-
+//Topic-2
+//console.log(`\n Topic-2`);
 //Maps->Map object hold key-value pairs 
 //remembers the original insertion order of the keys
-//value unique hogi 
+//Only unique value will show  
 //Example 3
 const map = new Map();
 map.set('IN',"INDIA")
@@ -33,7 +36,8 @@ map.set('PAK',"PAKISTAN")
     
 // }
 
-
+//Topic-3
+// console.log(`\n Topic-3`);
 //Example 4
 //iske output mai error aayega 
 //ye [key,value] wali cheez karne se bhi object iterable nahi hoga

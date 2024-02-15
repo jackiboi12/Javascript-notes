@@ -1,4 +1,4 @@
-// //Example 1
+// //Topic-1
 // console.log(`\n Topic-1`);
 // for (let i = 1; i <= 5; i++) {
 //     console.log(`Outer Loop ${i}`);
@@ -11,7 +11,7 @@
 // }
 
 
-// //Example 2
+// //Topic-2
 // console.log(`\n Topic-2`);
 // let MYarray = ["Flash", "Batman","Goku"]
 // for (let index = 0; index < MYarray.length; index++) {
@@ -22,7 +22,7 @@
 
 
 //Break and continue
-//Example 3
+//  //Topic-3
 // console.log(`\n Topic-3`);
 // for (let index = 1; index <=20; index++) {
 //     if(index==5){

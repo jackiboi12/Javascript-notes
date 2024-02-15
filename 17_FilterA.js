@@ -1,10 +1,14 @@
+//Topic-1
+console.log(`\n Topic-1`);
 const myNums = [1,2,3,4,5,6,7,8,9,10];
-
 //Example 1 (filter vs forEach)
+//Filter can return but not in case of forEach
+
 // const newNums = myNums.filter((num)=>{
 //     return num>4
 // })
 // console.log(newNums);
+
 
 // const newNums = []
 // myNums.forEach((num)=>{

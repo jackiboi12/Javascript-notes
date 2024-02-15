@@ -1,4 +1,6 @@
-//For-in Loop
+//For-in Loop (use for object)
+//Topic-1
+// console.log(`\n Topic-1`);
 //Example 1
 const myObject2 = {
     game1:"NFS",
@@ -16,14 +18,17 @@ const myObject2 = {
 const prgmLang = ["js","ruby","Python"] 
 for (const key in prgmLang) {
     console.log(key);   //ye index dega 
-    console.log(prgmLang[key]);
+    console.log(prgmLang[key]);     //this will give you value
 }
 
 //Example 3 map and forin Loops
 // iterate nahi karskte map ko 
+//Maps are not iteratable
 
 
 //for Each
+//Topic-2
+console.log(`\n Topic-2`);
 const coding = ["js","python","cpp","java"];
 //callback wale function use karna hota hai ie, no name
 //Example 4A
