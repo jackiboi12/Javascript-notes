@@ -24,7 +24,7 @@ switch (month) {
         break;
 
     default:
-        console.log("13");
+        console.log("None");
         break;
 }
 
@@ -37,20 +37,29 @@ if(userEmail){
 }else{
     console.log("Dont have user email");
 }
+
+//To check array is empty
+const myuserName = [];
+if(myuserName.length===0){
+    console.log("Array is empty");
+}
+
+//To check if object is empty
+//Object.keys(emptyObj) is an array thatswhy we can use .length
 const emptyObj = {}
 if(Object.keys(emptyObj).length===0){
-    console.log("Obj i empty");
+    console.log("Object is empty");
 }
-// false value -> false , 0 , -0 , BigInt 0n , "" , null , undefined , NaN
-//true value -> "0" , 'false' , " " , [] , {} , function(){}
+//falsy value -> false , 0 , -0 , BigInt 0n , "" , null , undefined , NaN
+//Truthy value -> "0" , 'false' , "  " , [] , {} , function(){}
 
 
 //Note 
 //remember their output 
 console.log(`\n Topic-4`);
-console.log(false==0);
-console.log(false=="");
-console.log(0=="");
+console.log(false==0);  //true
+console.log(false==""); //true
+console.log(0==""); //true
 
 
 //Nullish Coalescing ( ?? ) Operator:null undefined
@@ -59,7 +68,9 @@ let val1;
 val1 = 5??10
 console.log(val1);
 val1 = null??undefined
-console.log(val1);
+console.log(`null??undefined:-> ${val1}`);
+val1 = undefined??null
+console.log(`undefined??null:-> ${val1}`);
 val1 = undefined??10
 console.log(val1);
 

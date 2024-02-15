@@ -1,6 +1,6 @@
 //this keyword-> current context ko refer karrhe h 
 // scope ke andhar ho tab this ka use karo 
-//Example 1
+//topic-1
 console.log(`\n Topic-1`);
 const user = {
     username: "hitesh",
@@ -15,30 +15,30 @@ user.username = "Aditya"
 user.welcomeMessage()
 
 
-//Example 2
+//topic-2
 console.log(`\n Topic-2`);
-//function ke andhar "this" use nahi hoga
-//object mai hoga use 
 const ok = function(){
     let ok1 = "hello "
-    console.log(this.ok1);
+    //console.log(this.ok1);
+    //function ke andhar "this" use nahi hoga
+    //object mai hoga use
     console.log(this);    //output-> undefined 
 
 }
 ok();
 
 
-//Example 3->Arrow function mai bhi same output aayega
+//Topic-3->Arrow function mai bhi same output aayega
 console.log(`\n Topic-3`);
 const okji  = ()=>{
     let ok1 = "hello "
-    console.log(this.username);
+    //console.log(this.username);
     //output-> undefined 
 }
 ok();
 
 
-//Example 4
+////topic-4
 // console.log(`\n Topic-4`);
 // const addTwo = (num1,num2)=>{
 //     return num1+num2;
@@ -52,6 +52,6 @@ ok();
 //     username:"Aditya",
 //     age:88
 // });
-// console.log(addTwo());
+// console.log(addTwo(4,3));
 
 
