@@ -10,12 +10,13 @@
 
 
 // const title = document.getElementById("title") 
-// title.style.backgroundColor = "green"    //color change hojaayega
+// title.style.backgroundColor = "green"    
 // title.style.padding = "15px" 
+// title.style.borderRadius = "15px"
 
 
 //title.innerHTML //Output-> DOM WITH CHAI AND CODE 
-//title.textContent //Output-> DOM WITH CHAI AND CODE 
+//title.textContent //Output-> DOM WITH CHAI AND CODE text case
 //title.innerText //Output-> DOM WITH CHAI AND CODE 
 //difference btw All three->
 // innerText bas visible cheeze show karega jo page pr hongi
@@ -27,17 +28,18 @@
 // document.querySelector('#title') 
 // document.querySelector('.heading') 
 // document.querySelector('input[type="password"]') 
-// document.querySelector('input[type="password"]') 
 // document.querySelector('p:first-child') 
 
 
 // const myUl =  document.querySelector('ul') 
 // const turnGreen = myUl.querySelector('li')
-//turnGreen.style.backgroundColor = "green"
+// turnGreen.style.backgroundColor = "green"
+// turnGreen.style.padding = "20px"
 // turnGreen.innerText   //'one'
 // turnGreen.innerText="five"   //'five'
 
-// document.querySelectorAll('li')
+
+// document.querySelectorAll('li')  //return nodelist
 // const templiList = document.querySelectorAll('li')
 // templiList   //it is nodelist therefore map use nahi karskte
 // templiList[0].style.color = "green"  
@@ -50,9 +52,10 @@
 // myH1[0].style.color = "green"
 
 
-//this is a HTML collection
+// This is a HTML collection
+// Therefore no looping 
 // const tempClassList = document.getElementsByClassName('list_item')
-//Convert into Nodelist
+// Convert into Array
 // const myConvertedArray=Array.from(tempClassList)
 // myConvertedArray.forEach(function(li){
 //     li.style.color = 'orange'
