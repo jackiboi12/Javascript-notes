@@ -24,10 +24,11 @@
     // //     alert("Hello")
     // // }
 
-    // //attachEvent-> old time pr use hota tha
+    // //attachEvent()-> old time pr use hota tha
 
-    // // jquery -on -> old time pr use hota tha
+    // // jQuery - on -> old time pr use hota tha
 
+    //  //Use addEventListener
     // document.getElementById("images").addEventListener("click",function(e){
     //     console.log(e);
     //     console.log("Clicked inside the ul");
@@ -35,10 +36,13 @@
     // },false)
     // document.getElementById("owl").addEventListener("click",function(e){
     //     console.log("Owl Clicked");
-    //     e.stopPropagation() //Event bubble hokar upar nahi jaayega ie, id=images wali script run nahi karega
+    //     e.stopPropagation() 
+    //  //Event bubble hokar upar nahi jaayega ie, id=images wali script run nahi karega
     // },false)
-    // //Event propagation -> Event Bubbling false likha h na vo(bottom to top)
-    // //Event propagation -> Event capturing if false ko true likh do (top to bottom)
+
+    //  //false reason:->
+    // //1)Event propagation -> Event Bubbling false likha h na vo(bottom to top)
+    // //2)Event propagation -> Event capturing if false ko true likh do (top to bottom)
     
     // document.getElementById('google').addEventListener("click",function(e){
     //     e.preventDefault(); //Google start nahi hoga click karne pr bhi
@@ -54,13 +58,9 @@
             removeIt.remove(); //first Method
         }
         
+        //  //Another method to remove 
         // removeIt.parentNode.removeChild(removeIt)
     },false)
-
-
-
-
-
 
     /*
     Things to study
