@@ -5,32 +5,29 @@
 // Blocking Node-> Block the flow of program ->Read file sync
 // Non Blocking Node-> Does not Block the flow of program -> Read File async -->
 
-
 <!DOCTYPE html>
 <html lang="en">
-<head>
+  <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
-</head>
-<body>
+  </head>
+  <body>
     <h1>Chai aur code</h1>
-    <button id = "stop">Stop</button>
+    <button id="stop">Stop</button>
     <script>
-
-    //Example 1
-        const sayHitesh = () => {
-        console.log("Aditya");
-    }
-    const changeText =  function(){
-        document.querySelector("h1").innerHTML = "Best js series"
-
-    }
-    const changeMe = setTimeout(changeText, 2000);    //reference dena hai isliye no ()
-    document.querySelector("#stop").addEventListener('click',function () {
-        clearTimeout(changeMe)
+      //Example 1
+      const sayHitesh = () => {
+        console.log("HITESH");
+      };
+      const changeText = function () {
+        document.querySelector("h1").innerHTML = "Best js series";
+      };
+      const changeMe = setTimeout(changeText, 2000); //reference dena hai isliye no ()
+      document.querySelector("#stop").addEventListener("click", function () {
+        clearTimeout(changeMe);
         console.log("STTOPEDD");
-    })
+      });
     </script>
-</body>
+  </body>
 </html>

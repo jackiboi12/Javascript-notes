@@ -34,19 +34,18 @@ When assigning a reference value from one variable to another, the address of th
 This means both variables now reference the same object, allowing manipulation of the original object from both variables.
 */
 console.log();
-console.log("Topic-2"); 
+console.log("Topic-2");
 let username = "AdityaJ";
 let secondUsername = username;
-secondUsername  = "Anant";
-//Only Second value gets changed because it is stored in Stack memory 
-console.table([username,secondUsername]);
+secondUsername = "Anant";
+//Only Second value gets changed because it is stored in Stack memory
+console.table([username, secondUsername]);
 
 let obj = {
-    name:"AdityaJakhmola",
-    car:"Honda"
-}
+  name: "AdityaJakhmola",
+  car: "Honda",
+};
 let obj2 = obj;
 obj2.car = "Maruti";
-//Both value gets changed because it is stored in Heap memory 
-console.table([obj.car,obj2.car]);
-
+//Both value gets changed because it is stored in Heap memory
+console.table([obj.car, obj2.car]);

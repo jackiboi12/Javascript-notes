@@ -37,12 +37,12 @@
     //   document.body.style.backgroundColor = "green";
     // };
     // ----------Correct method ------------
-    function clickHandler(color){
-        return function(){
-          document.body.style.backgroundColor = `${color}`
-        }
+    function clickHandler(color) {
+      return function () {
+        document.body.style.backgroundColor = `${color}`;
+      };
     }
-    document.getElementById('orange').onclick = clickHandler("orange")
-    document.getElementById('green').onclick = clickHandler("green")
+    document.getElementById("orange").onclick = clickHandler("orange");
+    document.getElementById("green").onclick = clickHandler("green");
   </script>
 </html>
