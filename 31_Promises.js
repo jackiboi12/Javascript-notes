@@ -1,4 +1,4 @@
-//Promise is an object representing the eventual completion or failure of an asynchronous operation
+//Promise is an "object" representing the eventual completion or failure of an asynchronous operation
 //Example 1
 const promiseOne = new Promise(function (resolve, reject) {
   //Below task is a async task
@@ -83,7 +83,8 @@ const promiseFive = new Promise(function (resolve, reject) {
     }
   }, 1000);
 });
-//async function cannot handle catch badhiya tareeke se
+//async function cannot handle catch badhiya tareeke se so use try-catch
+//Different syntax to handle Promises.
 async function consumePromiseFive() {
   try {
     const response = await promiseFive;
@@ -98,8 +99,8 @@ consumePromiseFive();
 // async function getAllUsers(){
 //     try {
 //          const response = await fetch('https://jsonplaceholder.typicode.com/users')
-//          const data = await response.json();
-//          console.log(data);
+//          const data = await response.json(); //Here , await likhna mat bhoolna
+//          console.log(data); 
 //     } catch (error) {
 //         console.log("Error");
 //     }
