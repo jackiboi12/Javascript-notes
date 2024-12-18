@@ -1,71 +1,82 @@
-//String
+// String Manipulation in JavaScript
+
+// Topic 1: String Interpolation
 console.log("Topic-1");
+
 const age = 20;
-const name = new String("Aditya");
-// console.log(name + age); old format
-//use ` this when dealing with string
-console.log(`My name is ${name} and my age is ${age}`);
+const name = new String("Aditya"); // Creating a String object
+console.log(`My name is ${name} and my age is ${age}`); // Template literal for string interpolation
 
-const name2 = new String("Shubham");
-const age1 = new Number(20);
-console.log(`My name is ${name2} and my age is ${age1}`);
+const name2 = new String("Shubham"); // Another String object
+const age1 = new Number(20); // Creating a Number object
+console.log(`My name is ${name2} and my age is ${age1}`); // Using template literals
 
-console.log();
+console.log(); // Empty line for better readability
 
-//Topic-1
+// Topic 2: String Properties and Methods
 console.log("Topic-2");
-const gameName = new String("Jackiboi");
-//This way of representing String are key value pair
-//so we can access property and index also
-console.log(gameName);
-console.log(gameName[1]);
-console.log(gameName.toUpperCase());
-//Here original value is not changed because
-//Stack m all primitive data store hota hai
-//Copy banti h data ki and wahi aage jaati h
-console.log(gameName.charAt(6));
-console.log(gameName.indexOf("k"));
 
-const newString = gameName.substring(0, 4); //4 will not be included
-console.log(newString);
-const anoString = gameName.slice(0, -1); //Slice take -ve Values
-console.log(anoString);
+const gameName = new String("Jackiboi"); // String object with value "Jackiboi"
+console.log(gameName); // Displays the String object
+console.log(gameName[1]); // Accessing character at index 1 ('a')
+console.log(gameName.toUpperCase()); // Converts to uppercase (original value not changed)
 
-console.log();
-//Topic-2
+console.log(gameName.charAt(6)); // Output: 'b' (character at index 6)
+console.log(gameName.indexOf("k")); // Output: 3 (index of the first occurrence of 'k')
+
+const newString = gameName.substring(0, 4); // Extracts characters from index 0 to 3
+console.log(newString); // Output: 'Jack'
+
+const anoString = gameName.slice(0, -1); // Removes the last character
+console.log(anoString); // Output: 'Jackibo'
+
+console.log(); // Empty line for better readability
+
+// Topic 3: String Trimming and URL Manipulation
 console.log("Topic-3");
-const name1 = "   adi  ";
-console.log(name1);
-console.log(name1.trim()); //removes all spaces
-const url = "https://aditya.com/aditya%20jakhmola";
-console.log(url.replace("%20", "-"));
-console.log(url.includes("aditya")); //gives bool value
-console.log(url.split("a")); //return string value in array format
 
-console.log();
-//Topic-3
-console.log("Topic-3");
-//Substring and Slice operator
-const s = "The morning is upon us.";
-console.log(s.length);
+const name1 = "   adi  "; // String with leading and trailing spaces
+console.log(name1.trim()); // Removes all spaces, Output: 'adi'
+
+const url = "https://aditya.com/aditya%20jakhmola"; // URL with encoded space
+console.log(url.replace("%20", "-")); // Replaces '%20' with '-', Output: 'https://aditya.com/aditya-jakhmola'
+console.log(url.includes("aditya")); // Checks if 'aditya' is in the URL, Output: true
+console.log(url.split("a")); // Splits string by 'a', returns array of substrings
+
+console.log(); // Empty line for better readability
+
+// Topic 4: Substring and Slice Methods
+console.log("Topic-4");
+
+const s = "The morning is upon us."; // Example string
+console.log(s.length); // Output: 25
+
 console.log("Slice:");
-console.log(s.slice(12)); //"is upon us."
-console.log(s.slice(-11)); //"is upon us."
-//-ve indexing starts from -1 from backwards
-console.log(s.slice(23)); //""
-console.log(s.slice(13, 16)); //"s u"
-console.log(s.slice(16, 13)); //"" ->if (indexStart>indexLast no output)
-console.log(s.slice(-8, -4)); //"upon"
-console.log(s.slice(-8, 4)); //""
-console.log(s.slice(8, -4)); //"ing is upon"
+console.log(s.slice(12)); // Output: "is upon us." (substring from index 12 to end)
+console.log(s.slice(-11)); // Output: "is upon us." (negative index starts from the end)
+console.log(s.slice(13, 16)); // Output: "s u" (from index 13 to 15)
+console.log(s.slice(-8, -4)); // Output: "upon" (from -8 to -5)
+console.log(s.slice(8, -4)); // Output: "ing is upon"
 
 console.log("\nSubstring:");
-console.log(s.substring(12)); //"is upon us."
-console.log(s.substring(-11)); //"The morning is upon us."
-//substring treat -ve values as 0 so its start from 0 index
-console.log(s.substring(23)); //""
-console.log(s.substring(13, 16)); //"s u"
-console.log(s.substring(16, 13)); //"s u" ->if (indexStart>indexLast it will swap)
-console.log(s.substring(-8, -4)); //"" (0 to 0)
-console.log(s.substring(-8, 4)); //"The "
-console.log(s.substring(8, -4)); //"The morn" (Here, -4 changes to 0 then swap therefore 0-8 indexing )
+console.log(s.substring(12)); // Output: "is upon us." (same as slice)
+console.log(s.substring(13, 16)); // Output: "s u" (from index 13 to 15)
+console.log(s.substring(16, 13)); // Output: "s u" (swaps if indexStart > indexEnd)
+console.log(s.substring(-8, 4)); // Output: "The " (negative values treated as 0)
+
+console.log(); // Empty line for better readability
+
+// Additional Notes and Tips
+/*
+1. **String Interpolation:** Use template literals (``) for easier string interpolation.
+2. **Immutable Strings:** String methods (e.g., `toUpperCase`, `slice`) do not modify the original string but return a new one.
+3. **String Objects vs Primitives:** Avoid creating `String` objects unless necessary; primitive strings are simpler and faster.
+4. **Whitespace Handling:** Use `trim()` to clean up strings with unwanted spaces (useful for user input).
+5. **String Extraction:** 
+   - `slice(start, end)`: Works with negative values; extracts up to but not including `end`.
+   - `substring(start, end)`: Does not support negative values; swaps indices if `start > end`.
+6. **URL Handling:** 
+   - Use `replace()` to clean or modify URL components.
+   - Use `includes()` to check for substrings in URLs or strings.
+7. **Performance Tip:** For frequent string manipulations, consider using `join()` on arrays for better performance.
+*/
