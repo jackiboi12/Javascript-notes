@@ -18,6 +18,7 @@ console.log(typeof names); // Output -> string
 console.log(typeof null); // Output -> object (quirk in JS)
 console.log(typeof nullValue); // Output -> object (same as null)
 console.log(typeof undefined); // Output -> undefined
+console.log(typeof accountState); // Output -> undefined
 
 // Displaying variables in a table format
 console.table([age, names, nullValue, accountState]);

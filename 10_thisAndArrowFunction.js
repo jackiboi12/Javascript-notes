@@ -89,3 +89,9 @@ console.log(addTwoReturnObject(4, 3)); // Output: { username: 'Aditya', age: 88 
 // - Arrow functions are concise and great for one-liners.
 // - Use parentheses when returning objects to avoid syntax errors.
 // - Avoid using `this` in arrow functions when you need dynamic context, as it is lexically bound.
+
+// **Key Points for Revision**
+// 1. **`this` inside an object**: Inside an object method, `this` refers to the object itself. If the object properties are updated, `this` reflects the updated values.
+// 2. **`this` inside a regular function**: In regular functions, `this` depends on the context. If not bound to an object, `this` is `undefined` in strict mode or refers to the global object in non-strict mode.
+// 3. **`this` in arrow functions**: Arrow functions inherit `this` from their enclosing lexical scope. They do not have their own `this`, which is useful when working with functions inside methods or callbacks.
+// 4. **Arrow function syntax**: Arrow functions offer concise syntax, especially for one-liners. Use parentheses when returning an object to avoid syntax errors. Avoid using `this` in arrow functions when you need dynamic context, as it is lexically bound.

@@ -96,3 +96,11 @@ console.log(finalUsers[0].fullname); // Output: Adi Sharma
 // - Use Symbols for unique keys to avoid accidental overwriting of properties.
 // - Object.freeze can be used to make objects immutable (useful for constants).
 // - Nested objects and arrays are useful for organizing hierarchical data.
+
+// **Key Points for Revision**
+// 1. The Singleton pattern can be implemented using constructor functions, ensuring only one instance of an object is created.
+// 2. Object literals are not singletons; they can have multiple independent instances.
+// 3. Object.create allows creating objects with a specified prototype without using constructors.
+// 4. Symbols are used for unique keys to avoid accidental overwriting of properties.
+// 5. Object.freeze makes an object immutable, preventing modifications, additions, or deletions.
+// 6. Objects can be defined using dynamic properties, nested objects, and arrays of objects to organize data.

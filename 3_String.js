@@ -28,6 +28,8 @@ const newString = gameName.substring(0, 4); // Extracts characters from index 0 
 console.log(newString); // Output: 'Jack'
 
 const anoString = gameName.slice(0, -1); // Removes the last character
+console.log(gameName.slice(-3)); // Output: 'boi' (last three characters)
+console.log(gameName.slice(1, -2)); // Output: 'ackib' (removes first and last two characters)
 console.log(anoString); // Output: 'Jackibo'
 
 console.log(); // Empty line for better readability
@@ -37,6 +39,10 @@ console.log("Topic-3");
 
 const name1 = "   adi  "; // String with leading and trailing spaces
 console.log(name1.trim()); // Removes all spaces, Output: 'adi'
+// Additional example:
+const messyInput = "   Hello World!   ";
+console.log(messyInput.trimStart()); // Removes leading spaces, Output: 'Hello World!   '
+console.log(messyInput.trimEnd()); // Removes trailing spaces, Output: '   Hello World!'
 
 const url = "https://aditya.com/aditya%20jakhmola"; // URL with encoded space
 console.log(url.replace("%20", "-")); // Replaces '%20' with '-', Output: 'https://aditya.com/aditya-jakhmola'
@@ -79,4 +85,5 @@ console.log(); // Empty line for better readability
    - Use `replace()` to clean or modify URL components.
    - Use `includes()` to check for substrings in URLs or strings.
 7. **Performance Tip:** For frequent string manipulations, consider using `join()` on arrays for better performance.
+8. **Negative Indices:** When working with the end of strings, prefer `slice()` for its support of negative indices.
 */

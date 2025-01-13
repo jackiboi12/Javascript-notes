@@ -18,17 +18,21 @@ console.log(); // New line for better readability
 console.log("Topic-2");
 
 // Different formats to create a Date object
-// let myCreatedDate = new Date(2023, 0, 23); // 0 -> January
-// let myCreatedDate = new Date(2023, 0, 23, 5, 3); // Specific date and time
-let myCreatedDate = new Date("01-14-2023"); // Creates a Date object from a string
-// Output: Date object for January 14, 2023
-console.log(myCreatedDate);
+// Creates a Date object for January 23, 2023
+let myCreatedDate1 = new Date(2023, 0, 23); // Note: Month is 0-indexed
+console.log(myCreatedDate1.toDateString()); // Output: "Mon Jan 23 2023"
 
-// Display the date in a localized string format
-console.log(myCreatedDate.toLocaleString()); // e.g., "1/14/2023, 12:00:00 AM"
+// Creates a Date object with a specific time (5:03 AM)
+let myCreatedDate2 = new Date(2023, 0, 23, 5, 3);
+console.log(myCreatedDate2.toLocaleString()); // Output: "1/23/2023, 5:03:00 AM"
+
+// Creates a Date object from a string
+let myCreatedDate3 = new Date("01-14-2023"); 
+console.log(myCreatedDate3.toLocaleString()); // Output: "1/14/2023, 12:00:00 AM"
 
 // Get the timestamp (milliseconds since January 1, 1970)
-console.log(myCreatedDate.getTime()); // Output: Milliseconds since the epoch
+console.log(myCreatedDate3.getTime()); // Output: Milliseconds since the epoch
+
 console.log(); // New line for better readability
 
 // Topic 3: Getting Current Timestamp
@@ -37,6 +41,10 @@ console.log("Topic-3");
 // Get the current timestamp
 let myTimeStamp = Date.now();
 console.log(myTimeStamp); // Output: Current timestamp in milliseconds
+
+// Convert timestamp to a readable date
+console.log(new Date(myTimeStamp).toLocaleString()); // e.g., "9/29/2024, 2:56:29 PM"
+
 console.log(); // New line for better readability
 
 // Topic 4: Getting Components of a Date
@@ -52,15 +60,20 @@ console.log(newDate.getDate()); // Output: Current day of the month
 // Get the month (0-11) and add 1 for human-readable format
 console.log(newDate.getMonth() + 1); // Output: Current month (1-12)
 
+// Get the full year
+console.log(newDate.getFullYear()); // Output: Current year
+
 // Customize the date format to show the weekday
-newDate.toLocaleString("default", {
+console.log(newDate.toLocaleString("default", {
   weekday: "long", // Outputs the full name of the weekday, e.g., "Monday"
-});
+}));
 
-
-// **Important Points**:
-// 1. **Date Object**: The Date object in JavaScript represents a specific point in time, allowing you to manipulate and display dates and times easily.
-// 2. **Creating Dates**: Remember that in JavaScript, months are zero-indexed (January is 0, December is 11). So, always account for this when creating dates.
-// 3. **Formatting Dates**: The `toLocaleString()` method is great for displaying dates in a user-friendly format based on the user's locale. It automatically adjusts to regional preferences (e.g., "MM/DD/YYYY" in the US or "DD/MM/YYYY" in many other countries).
-// 4. **Getting Time**: The `getTime()` method returns the time value in milliseconds since the Unix Epoch (January 1, 1970). This is useful for performing date comparisons or calculations.
-// 5. **Customizing Formats**: You can customize how dates are displayed by using options with `toLocaleString()`. For example, you can display the full name of the weekday or the time in 12-hour format.
+// Additional Notes
+/*
+1. **Date Object**: The Date object in JavaScript represents a specific point in time, allowing you to manipulate and display dates and times easily.
+2. **Creating Dates**: Remember that in JavaScript, months are zero-indexed (January is 0, December is 11). Always account for this when creating dates.
+3. **Formatting Dates**: Use `toLocaleString()` for user-friendly date formatting based on locale preferences. It handles formats like "MM/DD/YYYY" (US) or "DD/MM/YYYY" (others).
+4. **Timestamp Usage**: Use `Date.now()` to get the current timestamp in milliseconds. Useful for date comparisons and performance measurements.
+5. **Component Extraction**: Methods like `getDate()`, `getMonth()`, and `getFullYear()` help extract specific components of a date.
+6. **Custom Formats**: `toLocaleString()` allows customization for displaying dates with options like `weekday`, `year`, `month`, and `day`.
+*/
